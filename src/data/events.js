@@ -26,7 +26,7 @@ const events1 = [
   ];
   import firebaseApp from "$lib/firebaseProject";
   import { collection, getDocs,getFirestore } from 'firebase/firestore';
-  async function getNews() {
+  async function getEvents() {
     const db = getFirestore(firebaseApp);
     const newsCollectionRef = collection(db, 'news'); // Replace 'news' with your collection name
     const querySnapshot = await getDocs(newsCollectionRef);
@@ -37,5 +37,4 @@ const events1 = [
     return events;
     
   }
-  const events = await getNews();
-  export default events;
+  export default getEvents;
