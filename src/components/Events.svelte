@@ -2,12 +2,18 @@
   import { fade, fly, scale } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
-  import events from '../data/events.js';
+  import getEvents from '../data/events.js';
 
   let mounted = false;
 
-  onMount(() => {
+onMount(async () => {
     mounted = true;
+    try {
+      events = await getEvents(); // Fetch dynamic events
+    } catch (error) {
+      console.error("Error loading events:", error);
+      // Keep using static events if fetch fails
+    }
   });
 
   const fixedevents = events
