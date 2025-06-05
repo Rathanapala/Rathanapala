@@ -2,9 +2,11 @@
   import { fade, fly, scale } from 'svelte/transition';
   import { cubicOut } from 'svelte/easing';
   import { onMount } from 'svelte';
-  import getEvents from '../data/events.js';
+  import getEvents from '../data/events';
 
   let mounted = false;
+  let events = [];
+let fixedevents = [];
 
 onMount(async () => {
     mounted = true;
@@ -13,10 +15,12 @@ onMount(async () => {
     } catch (error) {
       console.error("Error loading events:", error);
       // Keep using static events if fetch fails
+      events = []
     }
   });
 
-  const fixedevents = events
+$: if (events) {
+  fixedevents = events
     .filter((event) => {
       const eventDate = new Date(event.date);
       const today = new Date();
@@ -47,6 +51,8 @@ onMount(async () => {
         remaining_percent: Math.min(100, Math.max(5, (1 - remainingDays / 30) * 100)),
       };
     });
+}
+
 
   let selectedEvent = null;
   let showEventModal = false;
