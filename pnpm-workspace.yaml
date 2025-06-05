@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@sveltejs/kit'
+  - esbuild
+  - protobufjs
+packages:
+  - 'apps/*'
+  - 'packages/*'
