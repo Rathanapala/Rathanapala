@@ -1,7 +1,9 @@
 onlyBuiltDependencies:
+  - '@firebase/util'
   - '@sveltejs/kit'
   - esbuild
   - protobufjs
+  - svelte-preprocess
 packages:
-  - 'apps/*'
-  - 'packages/*'
+  - apps/*
+  - packages/*
