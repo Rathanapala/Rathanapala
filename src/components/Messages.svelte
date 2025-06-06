@@ -17,7 +17,7 @@
       title: "Principal",
       message: "Welcome to our Dhamma School. We are committed to nurturing young minds with the teachings of the Buddha and fostering a compassionate community.",
       image: principalImage,
-      link: "/principal",
+      link: "",
     };
   
     export let vicePrincipalMessage = {
@@ -25,7 +25,7 @@
       title: "Vice Principal",
       message: "Our goal is to provide a holistic education that combines academic excellence with moral and spiritual growth.",
       image: viceImage,
-      link: "/vice",
+      link: "",
     };
 
     export let assistantVicePrincipalMessage = {
@@ -33,7 +33,7 @@
       title: "Assistant Vice Principal",
       message: "We strive to create an environment where students can learn and practice Buddhist values while developing their character and wisdom.",
       image: assistantViceImage,
-      link: "/assistant-vice",
+      link: "",
     };
 </script>
   
