@@ -16,7 +16,7 @@
       name: "Venerable Sooriyagoda Siri Dhamma Thero",
       title: "Principal",
       message: "Welcome to our Dhamma School. We are committed to nurturing young minds with the teachings of the Buddha and fostering a compassionate community.",
-      image: principalImage,
+      image: "",
       link: "",
     };
   
@@ -24,7 +24,7 @@
       name: "Mr. Ariyansena Weerathunga",
       title: "Vice Principal",
       message: "Our goal is to provide a holistic education that combines academic excellence with moral and spiritual growth.",
-      image: viceImage,
+      image: "",
       link: "",
     };
 
@@ -32,7 +32,7 @@
       name: "Mrs. Maduri Priyadeshani",
       title: "Assistant Vice Principal",
       message: "We strive to create an environment where students can learn and practice Buddhist values while developing their character and wisdom.",
-      image: assistantViceImage,
+      image: "",
       link: "",
     };
 </script>
