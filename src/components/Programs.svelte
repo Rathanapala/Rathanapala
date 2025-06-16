@@ -6,7 +6,7 @@
   const statements = [
     {
       title: 'Our Vision',
-      description: 'To nurture mindful, compassionate, and enlightened young individuals who embody Buddhist values in their daily lives.',
+      description: 'සුචරිතවත් විශිෂ්ටයින් සමාජානුයෝජනය',
       icon: '👁️',
       color: 'from-[#ffcd5a] to-amber-400',
       symbol: `<svg class="w-12 h-12 text-[#001b47]" fill="currentColor" viewBox="0 0 20 20">
@@ -16,20 +16,11 @@
     },
     {
       title: 'Our Mission',
-      description: 'To provide high-quality Buddhist education through innovative teaching methods while preserving traditional Buddhist values and practices.',
+      description: 'සංස්කෘතික හර පද්ධතින් ඇගයීමට පොළඹවන, ඵලදායී පෞරුෂ වර්ධන ක්‍රියාකාරකම්වල නියැලෙන, නිර්මාණශීලි අර්ථ සම්පන්න කුමර කුමරියන් අභ්‍යාස කරවීමට මග පෙන්වීම',
       icon: '🎯',
       color: 'from-orange-400 to-orange-500',
       symbol: `<svg class="w-12 h-12 text-[#001b47]" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd" />
-              </svg>`
-    },
-    {
-      title: 'Our Values',
-      description: 'We are committed to fostering wisdom, compassion, mindfulness, and ethical conduct in every aspect of our educational approach.',
-      icon: '💫',
-      color: 'from-[#001b47] to-[#002b70]',
-      symbol: `<svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>`
     }
   ];
@@ -59,7 +50,7 @@
     {/if}
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
       {#each statements as statement, i}
         {#if mounted}
           <div 

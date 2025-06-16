@@ -32,7 +32,7 @@ const prefects=
     },
     {
       name: "Rayhan Faazil",
-      role: "Deputy Head Prefect",
+      role: "Prefect",
       year: "Final Year",
       description: "Assisting the Head Prefects and taking charge in their absence.",
     },

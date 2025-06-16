@@ -136,18 +136,10 @@
         <!-- Bottom bar with copyright -->
         <div class="mt-16 pt-8 border-t border-white/10">
             {#if mounted}
-                <div class="flex flex-col md:flex-row justify-between items-center" in:fade={{ duration: 800, delay: 500 }}>
-                    <p class="text-sm text-blue-100 mb-4 md:mb-0">
+                <div class="flex justify-center items-center" in:fade={{ duration: 800, delay: 500 }}>
+                    <p class="text-sm text-blue-100">
                         &copy; {currentYear} Sri Rathanapala Dhamma School. All rights reserved.
                     </p>
-                    
-                    <div class="flex space-x-4 text-xs text-blue-100">
-                        <a href="/privacy" class="hover:text-[#ffcd5a] transition-colors duration-300">Privacy Policy</a>
-                        <span class="text-white/30">|</span>
-                        <a href="/terms" class="hover:text-[#ffcd5a] transition-colors duration-300">Terms of Service</a>
-                        <span class="text-white/30">|</span>
-                        <a href="/sitemap" class="hover:text-[#ffcd5a] transition-colors duration-300">Sitemap</a>
-                    </div>
                 </div>
             {/if}
         </div>
